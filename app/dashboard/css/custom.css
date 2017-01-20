@@ -1,0 +1,223 @@
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #FFF;
+  }
+
+  .page-footer {
+    flex: 1 0 auto;
+  }
+
+#navbar nav {
+
+ background-color: #1EBFAD;
+
+}
+
+#subnav nav {
+ background-color: #157C8B;
+}
+
+.dropdown-content li a, .dropdown-content li span {
+  background-color: #157C8B;
+}
+
+.dropdown-content li a:hover {
+ background-color:  #036372; 
+}
+
+
+.dropdown-content li span:hover {
+ background-color:  #036372;
+}
+
+.preload {
+
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/preloader.gif) center no-repeat #fff;
+}
+
+.close {
+	color: #ee6e73;
+}
+
+#login-form {
+	margin-top: 15%;	
+}
+
+.input-field input[type="email"]:focus + label {
+	color:#2196F3;
+}
+
+.input-field input[type="email"]:focus {
+	border-bottom: 1px solid #2196F3;
+	box-shadow: 0 1px 0 0 #2196F3;
+}
+
+
+.input-field input[type="password"]:focus + label {
+        color:#2196F3;
+}
+
+.input-field input[type="password"]:focus {
+        border-bottom: 1px solid #2196F3;
+        box-shadow: 0 1px 0 0 #2196F3;
+}
+
+.input-field input.valid[type="email"] {
+	color:#2196F3;
+        border-bottom: 1px solid #2196F3;
+        box-shadow: 0 1px 0 0 #2196F3;
+
+}
+
+.input-field input.valid[type="password"] {
+        color:#2196F3;
+        border-bottom: 1px solid #2196F3;
+        box-shadow: 0 1px 0 0 #2196F3;
+
+}
+
+.dropdown-content{
+    overflow: visible !important;
+   
+}
+
+
+#sidenav {
+
+	margin-right: 15px;
+}
+
+#sidenav-mobile {
+
+	margin-right: 15px;
+}
+
+#subnavLinks {
+	
+	margin-right: 2%;
+
+}
+
+#calendar {
+
+	
+}
+
+.editable input {
+
+	
+
+}
+
+#breadcrumbs nav {
+	margin-top: 10px;	
+	background-color: #FFF;
+	box-shadow: none;
+}
+
+#breadcrumbs nav div a {
+	margin-left: 10px;
+	color: #000;
+} 
+
+.breadcrumb::before {
+	color: #000;
+}
+
+#fullcalendar {
+	
+	margin-top: 2%;
+
+}
+
+h2 {
+	color: #157C8B;
+}
+
+.modal {
+	max-height: 80%;
+}
+
+.modal-content {
+
+	max-height: 100%;
+}
+
+@media screen and (max-width: 400px){
+	.modal {
+	
+	   width: 90%;
+	   
+	}
+
+	#newappointment h4 {
+	
+	   font-size: 22pt;
+
+	}
+
+}
+
+
+.fc-view-container {
+	background-color: #EEE;
+}
+
+#newappointment h4 {
+	border-left: 4px solid #1EBFAD;
+	background:transparent;
+	padding: 1px 1px 1px;
+	text-align: center;
+}
+
+.fc-day:hover {
+	background: #fcf8e3;
+
+}
+
+.card-title {
+	padding: 5px;
+	text-align: center; 
+}
+
+#card-date {
+	background-color: #FAFAFA;
+	border: 1px solid #EEE;
+	text-align: center;
+}
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes shake {
+
+  0%, 100% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+  }
+
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+  }
+}
+

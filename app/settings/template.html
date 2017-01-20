@@ -1,0 +1,16 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col l12">
+      <h1>Settings</h1>
+
+      <form>
+
+	<input type="text" name="company_name" id="company_name" value="<% if(collection.models.length > 0) { %> <%=collection.models[0].get('company_name')%> <%}%>" />	
+	<input type="hidden" name="parent_id" id="parent_id" value="1" />
+	<input type="submit" id="submit" />
+      </form>
+
+    </div>
+  </div>
+</div>

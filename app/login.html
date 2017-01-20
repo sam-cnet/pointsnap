@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<title>Online Appointments</title>
+
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/custom.css" />
+
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+<script>
+$(window).load(function(){
+
+$(".preload").fadeOut("slow"); 
+
+});
+</script>
+
+</head>
+<body>
+
+   <div class="preload">
+   </div>
+
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+
+	<!--mobile icon-->
+	<ul class="left hide-on-large-only">
+	  <li><a href="//pointsnap.ca/"><i class="material-icons">keyboard_arrow_left</i></a></li>
+	</ul>
+
+	<!--desktop icon-->
+	<ul class="left hide-on-med-and-down">
+	  <li><a href="//pointsnap.ca/"><i class="material-icons">keyboard_arrow_left</i></a></li>
+	</ul>
+    </div>
+  </nav>
+</div>
+
+
+  <div class="container">
+	
+	    <div class="row">
+	      <form id="login-form" method="post" action="api/auth/" class="col s10 offset-s1 m6 offset-m3 l6 offset-l3">
+
+		<div class="row center grey-text lighten-4-text">
+		  <h3 class="black-text">PointSnap <small class="grey-text">Member Login</small></h3>
+		</div>
+
+		<div class="row">
+
+		  <div class="input-field col s12 md12 l12">
+
+		    <input name="username" type="email" class="validate">
+		    <label>Email</label>
+
+		  </div>
+		</div>
+
+
+                <div class="row">
+
+                  <div class="input-field col s12 md12 l12">
+
+                    <input name="password" type="password" class="validate">
+                    <label>Password</label>
+
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="input-field col s12 md12 l12">
+
+                    <button class="btn-large waves-effect waves-light blue" type="submit">
+                      Login
+		    </button>
+
+                  </div>
+                </div>
+
+	      </form>
+	    </div>
+
+
+  </div>
+
+
+<script>
+
+  // Initialize collapse button
+  $("#sidenav").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
+        
+</script>
+</body>
+</html>

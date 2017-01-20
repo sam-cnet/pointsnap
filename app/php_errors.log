@@ -1,0 +1,74 @@
+[02-May-2016 23:35:16 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/app/tickets/index.php on line 3
+[02-May-2016 23:37:02 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/app/tickets/index.php on line 14
+[03-May-2016 00:06:31 UTC] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home/ubuntu/workspace/app/tickets/index.php on line 54
+[03-May-2016 00:06:31 UTC] PHP Stack trace:
+[03-May-2016 00:06:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[03-May-2016 00:48:27 UTC] PHP Warning:  max(): Array must contain at least one element in /home/ubuntu/workspace/app/tickets/index.php on line 24
+[03-May-2016 00:48:27 UTC] PHP Stack trace:
+[03-May-2016 00:48:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[03-May-2016 00:48:27 UTC] PHP   2. max() /home/ubuntu/workspace/app/tickets/index.php:24
+[03-May-2016 00:48:42 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/app/tickets/index.php on line 24
+[03-May-2016 00:48:53 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/app/tickets/index.php on line 76
+[03-May-2016 00:49:12 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/app/tickets/index.php on line 26
+[03-May-2016 00:49:26 UTC] PHP Warning:  max(): Array must contain at least one element in /home/ubuntu/workspace/app/tickets/index.php on line 27
+[03-May-2016 00:49:26 UTC] PHP Stack trace:
+[03-May-2016 00:49:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[03-May-2016 00:49:26 UTC] PHP   2. max() /home/ubuntu/workspace/app/tickets/index.php:27
+[03-May-2016 00:49:30 UTC] PHP Warning:  max(): Array must contain at least one element in /home/ubuntu/workspace/app/tickets/index.php on line 27
+[03-May-2016 00:49:30 UTC] PHP Stack trace:
+[03-May-2016 00:49:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[03-May-2016 00:49:30 UTC] PHP   2. max() /home/ubuntu/workspace/app/tickets/index.php:27
+[03-May-2016 00:49:59 UTC] PHP Warning:  max(): Array must contain at least one element in /home/ubuntu/workspace/app/tickets/index.php on line 26
+[03-May-2016 00:49:59 UTC] PHP Stack trace:
+[03-May-2016 00:49:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[03-May-2016 00:49:59 UTC] PHP   2. max() /home/ubuntu/workspace/app/tickets/index.php:26
+[03-May-2016 00:50:02 UTC] PHP Warning:  max(): Array must contain at least one element in /home/ubuntu/workspace/app/tickets/index.php on line 26
+[03-May-2016 00:50:02 UTC] PHP Stack trace:
+[03-May-2016 00:50:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[03-May-2016 00:50:02 UTC] PHP   2. max() /home/ubuntu/workspace/app/tickets/index.php:26
+[03-May-2016 01:02:40 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/app/tickets/index.php on line 20
+[03-May-2016 01:03:35 UTC] PHP Fatal error:  Class 'myslqi' not found in /home/ubuntu/workspace/app/tickets/index.php on line 8
+[03-May-2016 01:03:35 UTC] PHP Stack trace:
+[03-May-2016 01:03:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[04-May-2016 07:59:29 UTC] PHP Warning:  explode() expects at least 2 parameters, 1 given in /home/ubuntu/workspace/app/tickets/index.php on line 62
+[04-May-2016 07:59:29 UTC] PHP Stack trace:
+[04-May-2016 07:59:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[04-May-2016 07:59:29 UTC] PHP   2. explode() /home/ubuntu/workspace/app/tickets/index.php:62
+[04-May-2016 08:02:55 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/app/tickets/index.php on line 68
+[04-May-2016 08:02:55 UTC] PHP Stack trace:
+[04-May-2016 08:02:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[04-May-2016 08:06:27 UTC] PHP Fatal error:  Call to undefined method mysqli_stmt::fetch_array() in /home/ubuntu/workspace/app/tickets/index.php on line 73
+[04-May-2016 08:06:27 UTC] PHP Stack trace:
+[04-May-2016 08:06:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[04-May-2016 08:06:39 UTC] PHP Fatal error:  Call to undefined method mysqli_stmt::fetch_array() in /home/ubuntu/workspace/app/tickets/index.php on line 73
+[04-May-2016 08:06:39 UTC] PHP Stack trace:
+[04-May-2016 08:06:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[26-May-2016 23:37:44 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/app/tickets/index.php on line 36
+[26-May-2016 23:37:44 UTC] PHP Stack trace:
+[26-May-2016 23:37:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[26-May-2016 23:38:09 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/app/tickets/index.php on line 14
+[26-May-2016 23:38:09 UTC] PHP Stack trace:
+[26-May-2016 23:38:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[26-May-2016 23:38:16 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/app/tickets/index.php on line 14
+[26-May-2016 23:38:16 UTC] PHP Stack trace:
+[26-May-2016 23:38:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/tickets/index.php:0
+[25-Aug-2016 03:21:12 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'public'@'localhost' (using password: YES) in /home/ubuntu/workspace/app/auth/index.php on line 5
+[25-Aug-2016 03:21:12 UTC] PHP Stack trace:
+[25-Aug-2016 03:21:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/auth/index.php:0
+[25-Aug-2016 03:21:12 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/app/auth/index.php:5
+[25-Aug-2016 03:28:24 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'public'@'localhost' (using password: YES) in /home/ubuntu/workspace/app/auth/index.php on line 5
+[25-Aug-2016 03:28:24 UTC] PHP Stack trace:
+[25-Aug-2016 03:28:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/auth/index.php:0
+[25-Aug-2016 03:28:24 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/app/auth/index.php:5
+[25-Aug-2016 03:28:24 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/app/auth/index.php on line 9
+[25-Aug-2016 03:28:24 UTC] PHP Stack trace:
+[25-Aug-2016 03:28:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/auth/index.php:0
+[25-Aug-2016 03:28:24 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/app/auth/index.php:9
+[25-Aug-2016 03:28:27 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'public'@'localhost' (using password: YES) in /home/ubuntu/workspace/app/auth/index.php on line 5
+[25-Aug-2016 03:28:27 UTC] PHP Stack trace:
+[25-Aug-2016 03:28:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/auth/index.php:0
+[25-Aug-2016 03:28:27 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/app/auth/index.php:5
+[25-Aug-2016 03:28:27 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/app/auth/index.php on line 9
+[25-Aug-2016 03:28:27 UTC] PHP Stack trace:
+[25-Aug-2016 03:28:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/auth/index.php:0
+[25-Aug-2016 03:28:27 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/app/auth/index.php:9

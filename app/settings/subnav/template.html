@@ -1,0 +1,98 @@
+  <nav>
+    <div class="nav-wrapper">
+      <div>
+
+
+        <ul id="subnavLinks" class="right">
+	  <li>
+  	    <a href="#" class="tooltipped" data-position="left" data-delay="50" data-tooltip="list view"><i class="material-icons">list</i></a>
+	  </li>
+
+	  <li>
+
+   	   <a href="#" class="dropdown-button" data-toggle="dropdown" data-activates="add-dropdown" data-beloworigin="true" data-hover="true" >
+             <i class="material-icons">note_add</i>
+           </a>
+
+	  </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <ul id="add-dropdown" class="dropdown-content right">
+    <li><a href="#modal1"><i class="material-icons">add_circle_outline</i></a></li>
+    <li><a href="#"><i class="material-icons">add_alert</i></a></li>
+    <li><a href="#"><i class="material-icons">alarm_add</i></a></li>
+  </ul>
+
+
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <div class="row"> 
+        <form id="newappointment" method="POST" action="/app/api/calendar.php" class="col s12">
+	  <h4>New Appointment</h4>
+
+	  <input type="hidden" name="action" value="addCalEvent" />
+
+	  <div class="row">
+	    <div class="input-field col s12">
+	      <select name="status" id="status">
+	        <option>New</option>
+		<option>Confirmed</option>
+		<option>Cancelled</option>
+	      </select>
+	      <label>Status</label>
+	    </div>
+	  </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <select name="service" id="service">
+	       <option>Default</option>
+		<option>Default2:w</option>
+	      </select>
+              <label>Service</label>
+	    </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <select name="customer" id="customer">
+	        <option>Guest Customer</option>
+	      </select>
+              <label>Customer</label>
+            </div>
+          </div>
+
+	  <div class="row">
+            <div class="input-field col s12 m12 l6">
+              <input id="startDate" name="start" type="text"  />
+              <label>Pick a date</label> 
+	    </div>
+          
+
+          
+            <div class="input-field col s12 m12 l6">
+              <input name="startTime" id="startTime" type="text" />
+              <label>Pick a time</label>
+            </div>
+          </div>
+      </div>
+     </form>
+    </div>
+    <div class="modal-footer">
+
+	<input type="submit" form="newappointment" value="Save" class="waves-effect waves-green btn waves-effect waves-light green" />
+	<a href="#" class="modal-action modal-close waves-effect waves-green btn waves-effect waves-light btn-flat">Cancel</a>
+       
+  </div>
+  </div>
+
+

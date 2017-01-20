@@ -1,0 +1,37 @@
+<div class="container">
+
+  <div class="row">
+      <h1 class="grey-text">Services</h1>
+
+        <table class="bordered">
+          <thead>
+            <th>ID</th>
+            <th>Name</th>
+	    <th>Location</th>
+          </thead>
+
+          <tbody>
+
+            <% _.each(collection.models, function(m) { %>
+
+               <tr>
+                 <td><%= m.get('ID') %></td>
+                 <td><%= m.get('name') %></td>
+		 <td><%= m.get('location') %></td>
+                 <td class="">
+
+                  <a id="edit" href="#" class="btn" style="padding:0px 5px 5px 5px;"><i class="material-icons">settings</i></a>
+
+                 </td>
+               </tr>
+            <% }); %>
+
+          </tbody>
+        </table>
+
+
+
+  </div>
+</div>
+
+

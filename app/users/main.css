@@ -1,0 +1,61 @@
+
+body {
+    
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+@media only screen and (min-width:700px){
+    
+    
+    .container {
+        
+        padding-top: 150px;
+        
+    }
+    
+    .panel-heading{
+        font-size: 12pt;
+    }
+}
+.panel-default {
+
+    border: 1px solid #ddd;
+}
+
+.panel-heading {
+    
+    background-color: #F5F5F5;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16pt;
+    line-height: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.panel-body {
+    
+    background-color: #EEE;
+    
+}
+
+.panel-body input {
+    height: 50px; 
+    margin-top:2px;
+    border-radius: 0px;
+}
+
+
+.panel-footer button {
+    
+    width: 100%;
+    border-radius: 0px;
+    
+}
+
+.breadcrumb ul {
+    
+    background-color: #FFF;
+}

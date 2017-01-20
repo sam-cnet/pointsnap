@@ -1,0 +1,74 @@
+<script>
+var ID = <%=model.ID%>; 
+$("#delete").attr('href', 'http://pointsnap.ca/app/api/calendar.php?action=delete&id=' + ID);
+</script>
+
+ <!-- Modal Structure -->
+  <div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+
+ <form id="newappointment" method="POST" action="/app/api/calendar.php" class="col s12">
+
+            <div class="fixed-action-btn toolbar right" style="position:relative;top:0px;">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">settings</i>
+    </a>
+    <ul>
+      <li class="waves-effect waves-light"><a id="edit"><i class="material-icons">mode_edit</i></a></li>
+  
+    </ul>
+  </div>
+
+	  <div class="row">
+	    <div class="input-field col s12 editable">
+	      <input id="status" name="status" type="text" value="<%=model.status%>" />
+	      <label>Status</label>
+	    </div>
+
+	  </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+		
+	      <select id="service" name="service" ><option>service</option></select>	      
+              <label>Service</label>
+	    </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="customer" name="customer" type="text" value="<%=model.customer%>" />
+              <label>Customer</label>
+            </div>
+          </div>
+
+	  <div class="row">
+            <div class="input-field col s12 m12 l6">
+              <input id="startDate" name="start" type="text" value="<%=model.date%>" />
+              <label>Pick a date</label> 
+	    </div>
+          
+
+          
+            <div class="input-field col s12 m12 l6">
+              <input name="startTime" id="startTime" type="text" value="<%=model.time%>" />
+              <label>Pick a time</label>
+	    </div>
+	  </div>
+	</form>
+    </div>
+    <div class="modal-footer">
+      <a href="#" id="save" class="btn waves-effect waves-green disabled">Update</a>
+      <a href="#" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+
+
+  <a id="modal2btn" href="#modal2" style="display:hidden;"></a>
+
+
+
+
+  
+
+

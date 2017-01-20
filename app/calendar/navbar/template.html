@@ -1,0 +1,60 @@
+<script>
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
+</script>
+
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+
+
+        <ul class="left">
+
+
+	  <li id="dashboard"><a id="dashboard" href="/app/dashboard"><i class="material-icons">update</i></a></li>
+ 
+          <li id="calendar" class="active"><a id="calendar" class="" href="/app/calendar"><i class="material-icons">event</i></a></li>
+          <li id="customers" class=""><a href="/app/customers/"><i class="material-icons">people</i></a></li>
+          <li id="booking"><a href="/app/services/"><i class="material-icons">shopping_cart</i></a></li>
+
+        </ul>
+
+
+      <ul id="nav-mobile" class="right hide-on-small-only">
+        <li>
+         <a href="#" id="sidenav" data-activates="slide-out">
+           <i class="material-icons">more_vert</i></a></li>
+
+      </ul>
+
+       <a href="#" id="sidenav-mobile" class="right hide-on-med-and-up" data-activates="slide-out">
+        <i class="material-icons">more_vert</i>
+       </a>
+
+    </div>
+  </nav>
+
+
+</div>
+
+  <ul id="slide-out" class="side-nav">
+   <li>
+    <div class="userView">
+     <a href="#" onclick="$('#sidenav').sideNav('hide');"><i class="material-icons">close</i></a>
+    </div>
+   </li>
+ 
+   <li>
+     <a href="app/settings/" class="waves-effect"><i class="material-icons">settings</i>Settings</a>
+   </li>
+
+   <li>
+     <a href="../api/auth/logout.php" class="waves-effect"><i class="material-icons">exit_to_app</i>Signout</a>
+   </li>
+
+
+  </ul>
+
+
+

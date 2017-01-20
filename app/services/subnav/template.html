@@ -1,0 +1,67 @@
+  <nav>
+    <div class="nav-wrapper">
+      <div>
+
+
+        <ul id="subnavLinks" class="right">
+	  <li>
+
+   	   <a href="#" class="dropdown-button" data-toggle="dropdown" data-activates="add-dropdown" data-beloworigin="true" data-hover="true" >
+             <i class="material-icons">note_add</i>
+           </a>
+
+	  </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <ul id="add-dropdown" class="dropdown-content right">
+    <li><a href="#modal1"><i class="material-icons">add_circle_outline</i></a></li>
+  </ul>
+
+
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer" style="height:100%;">
+    <div class="modal-content">
+      <div class="row"> 
+        <form id="newservice" method="POST" action="/app/api/services.php" class="col s12">
+	  <h4>New Service</h4>
+
+	  <input type="hidden" name="action" value="addCalEvent" />
+
+	  <div class="row">
+	    <div class="input-field col s12">
+	      <input type="text" name="name" id="name" />
+	      <label>Service Name</label>
+	    </div>
+	  </div>
+
+          <div class="row" style="height:100%;width:100%;">
+            <div class="input-field col s12">
+              <input type="text" name="location" id="location" />
+              <label>Store Location</label>
+	    </div>
+          <div id="map" data-view="map" style="height:100%;"></div>
+
+          </div>
+      </div>
+
+     </form>
+      
+  
+    </div>
+    <div class="modal-footer">
+
+	<input type="submit" form="newservice" value="Save" class="waves-effect waves-green btn waves-effect waves-light green" />
+	<a href="#" class="modal-action modal-close waves-effect waves-green btn waves-effect waves-light btn-flat">Cancel</a>
+       
+  </div>
+  </div>
+
+

@@ -1,0 +1,42 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col l12">
+      <h1>Customers</h1>
+
+	<table class="bordered">
+	  <thead>
+	    <th>Firstname</th>
+	    <th>Lastname</th>
+	    <th>Email</th>
+	  </thead>
+	
+	  <tbody>
+	    
+	    <% _.each(model.models, function(m) { %>
+
+               <tr>
+	         <td><%= m.get('firstname') %></td>
+		 <td><%= m.get('lastname') %></td>
+		 <td><%= m.get('email') %></td>
+		 <td class="">
+
+
+		<a class='dropdown-button btn' href='#' data-activates='dropdown1'><i class="material-icons">settings</i></a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#" id="delete" data-customer_id="<%=m.get('ID')%>"><i class="material-icons">delete_forever</i></a></li>
+  </ul>
+
+		 </td>
+	       </tr>
+            <% }); %>	
+
+	  </tbody>
+	</table>
+
+
+   </div>
+  </div>
+</div>

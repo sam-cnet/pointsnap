@@ -1,0 +1,76 @@
+<div class="row"><br />
+ <div class="col l4 s12">
+
+  <div class="card">   	
+   <div class="card-content">
+    <div class="row" id="card-date">
+     <span class="card-title"></span>
+    </div>
+    <div class="row">
+     <span class="card-title">
+      You have <b><%=collection.models.length%></b> bookings
+     </span>   
+    </div>         
+   </div>
+   <div class="card-action">
+    <a href="/app/calendar">view calendar</a>
+   </div>
+  </div> 
+
+
+ </div>
+</div>
+
+      <script>(function(){
+
+	var date = function(){
+	
+	  var d = new Date();
+
+	  var n = d.getDate();
+	  
+	  var day; //formatted below
+
+	  var m;
+
+	  switch(day = d.getDay()){
+		case 0:
+			day = "Sunday";
+			break;
+		case 1:
+			day = "Monday";
+			break;
+		case 2:
+			day = "Tuesday";
+			break;
+		case 3:
+			day = "Wednesday";
+			break;
+		case 4:
+			day = "Thursday";
+			break;
+		case 5:
+			day = "Friday";
+			break;
+		case 6:
+			day = "Satday";
+			break;
+	  }	 
+	
+	  switch(m = d.getMonth()) {
+		
+		case 0:
+			m = "Jan";
+			break;
+	
+	  } 
+
+	  var y = d.getFullYear();
+
+	  var formattedDate = day + ", " + m + " " + n + ", " + y;
+
+	  return formattedDate = formattedDate;
+
+	}
+	$(".card-title:first").html(date());})();</script>
+ 

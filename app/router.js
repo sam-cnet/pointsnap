@@ -1,0 +1,9 @@
+define('router', [], 
+
+
+function(){
+    
+    
+    alert("");
+    
+});

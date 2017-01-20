@@ -1,0 +1,82 @@
+  <nav>
+    <div class="nav-wrapper">
+      <div>
+
+
+        <ul id="subnavLinks" class="right">
+
+	  <li>
+
+   	   <a href="#" class="dropdown-button" data-toggle="dropdown" data-activates="add-dropdown" data-beloworigin="true" data-hover="true" >
+             <i class="material-icons">note_add</i>
+           </a>
+
+	  </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <ul id="add-dropdown" class="dropdown-content right">
+    <li><a href="#modal1"><i class="material-icons">add_circle_outline</i></a></li>
+  </ul>
+
+
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <div class="row"> 
+        <form id="newcustomer" method="POST" action="/app/api/customers.php" class="col s12">
+	  <h4>New Customer</h4>
+
+	  <input type="hidden" name="action" value="addCustomer" />
+
+	  <input type="hidden" name="parent" value="" />
+
+	  <div class="row">
+	    <div class="input-field col s12 l6">
+	      <input type="text" name="firstname" />
+	      <label>Firstname</label>
+	    </div>
+	  
+            <div class="input-field col s12 l6">
+
+	     <input type="text" name="lastname" />
+             <label>Lastname</label>
+	    </div>
+
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12 l6">
+	     <input type="text" name="email" />         
+             <label>Customer Email</label>
+            </div>
+         
+
+	 
+            <div class="input-field col s12 m12 l6">
+              <input id="telephone" name="telephone" type="text"  />
+              <label>Telephone</label> 
+	    </div>
+          
+
+     
+          </div>
+      </div>
+     </form>
+    </div>
+    <div class="modal-footer">
+
+	<input type="submit" form="newcustomer" value="Save" class="waves-effect waves-green btn waves-effect waves-light green" />
+	<a href="#" class="modal-action modal-close waves-effect waves-green btn waves-effect waves-light btn-flat">Cancel</a>
+       
+  </div>
+  </div>
+
+
