@@ -2,7 +2,7 @@
 
 session_start();
 
-$mysqli = new mysqli("localhost", "public", "fca9ea3b1f585b387c7709788b482881", "app");
+$mysqli = new mysqli("localhost", "public", "", "app");
 
 $username = strtolower(htmlspecialchars(filter_var($_POST['username'], FILTER_SANITIZE_EMAIL)));
 
